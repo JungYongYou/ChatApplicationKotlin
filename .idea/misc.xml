@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/ChatApplicationKotlin/app/src/main/res/drawable/btn_background.xml" value="0.378125" />
         <entry key="..\:/workspace/ChatApplicationKotlin/app/src/main/res/drawable/edt_background.xml" value="0.378125" />
-        <entry key="..\:/workspace/ChatApplicationKotlin/app/src/main/res/layout/activity_log_in.xml" value="0.26811594202898553" />
+        <entry key="..\:/workspace/ChatApplicationKotlin/app/src/main/res/layout/activity_log_in.xml" value="0.33" />
       </map>
     </option>
   </component>
