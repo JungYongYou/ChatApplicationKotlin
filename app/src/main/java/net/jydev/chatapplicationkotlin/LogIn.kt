@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : AppCompatActivity() {
@@ -40,6 +41,16 @@ class LogIn : AppCompatActivity() {
     }
 
     private fun login(email: String, password: String) {
-
+        //login for logging user
+        mAuth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // code for logging in user
+                    val intent = Intent(this@LogIn, MainActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this@LogIn, "User does not exist", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }
